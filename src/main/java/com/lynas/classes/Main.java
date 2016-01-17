@@ -14,6 +14,8 @@ public class Main {
         Knight knight = context.getBean(Knight.class);
         knight.emberkOnQuest();
 
+        MyStuff myStuff = context.getBean(MyStuff.class);
+        myStuff.doStuff();
 
         context.close();
     }

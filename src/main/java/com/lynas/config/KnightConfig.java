@@ -2,6 +2,7 @@ package com.lynas.config;
 
 import com.lynas.aspect.Audience;
 import com.lynas.classes.BraveKnight;
+import com.lynas.classes.MyStuff;
 import com.lynas.classes.Performance;
 import com.lynas.classes.SlayDragonQuest;
 import com.lynas.interfaces.Knight;
@@ -35,6 +36,11 @@ public class KnightConfig {
     @Bean
     public Audience audience(){
         return new Audience();
+    }
+
+    @Bean
+    public MyStuff myStuff(){
+        return new MyStuff();
     }
 
 

@@ -12,7 +12,10 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class Audience {
 
-    @Pointcut("execution(public void com.lynas.interfaces.Knight.emberkOnQuest())")
+    /*@Pointcut("execution(public void com.lynas.interfaces.Knight.emberkOnQuest())")
+    public void performace(){}*/
+
+    @Pointcut("execution(public void com.lynas.classes.MyStuff.doStuff()))")
     public void performace(){}
 
     @Around("performace()")
