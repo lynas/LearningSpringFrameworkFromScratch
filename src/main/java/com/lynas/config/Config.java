@@ -20,7 +20,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @Configuration
 @EnableAspectJAutoProxy
 @ComponentScan("com.lynas")
-public class KnightConfig {
+public class Config {
 
     @Bean
     public Knight knight() {
@@ -38,10 +38,7 @@ public class KnightConfig {
         return new Audience();
     }
 
-    @Bean
-    public MyStuff myStuff(){
-        return new MyStuff();
-    }
+
 
 
 }
