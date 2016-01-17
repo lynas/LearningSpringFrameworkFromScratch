@@ -1,7 +1,7 @@
-package classes;
+package com.lynas.classes;
 
-import config.KnightConfig;
-import interfaces.Knight;
+import com.lynas.config.KnightConfig;
+import com.lynas.interfaces.Knight;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -13,6 +13,10 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(KnightConfig.class);
         Knight knight = context.getBean(Knight.class);
         knight.emberkOnQuest();
+
+        Performance performance = context.getBean(Performance.class);
+        performance.perform();
+
         context.close();
     }
 }

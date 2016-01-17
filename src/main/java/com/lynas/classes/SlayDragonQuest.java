@@ -1,6 +1,6 @@
-package classes;
+package com.lynas.classes;
 
-import interfaces.Quest;
+import com.lynas.interfaces.Quest;
 
 import java.io.PrintStream;
 

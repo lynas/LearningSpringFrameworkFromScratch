@@ -1,7 +1,7 @@
-package classes;
+package com.lynas.classes;
 
-import interfaces.Knight;
-import interfaces.Quest;
+import com.lynas.interfaces.Knight;
+import com.lynas.interfaces.Quest;
 
 /**
  * Created by lynas on 1/9/16.

@@ -1,4 +1,4 @@
-package interfaces;
+package com.lynas.interfaces;
 
 import org.springframework.context.annotation.Bean;
 
