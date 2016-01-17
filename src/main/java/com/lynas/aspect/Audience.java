@@ -12,15 +12,15 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class Audience {
 
-    @Pointcut("execution(public void com.lynas.interfaces.Show.perform())")
+    @Pointcut("execution(public void com.lynas.interfaces.Knight.emberkOnQuest())")
     public void performace(){}
 
-    @Before("performace()")
-    public void watchPerformance(){
+    @Around("performace()")
+    public void watchPerformance(ProceedingJoinPoint joinPoint){
         try{
             System.out.println("silence phone");
             System.out.println("Sitting down");
-            //joinPoint.proceed();
+            joinPoint.proceed();
             System.out.println("Clap Clap Clap !!!");
 
         }catch (Exception e){

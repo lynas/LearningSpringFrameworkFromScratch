@@ -14,8 +14,6 @@ public class Main {
         Knight knight = context.getBean(Knight.class);
         knight.emberkOnQuest();
 
-        Performance performance = context.getBean(Performance.class);
-        performance.perform();
 
         context.close();
     }
